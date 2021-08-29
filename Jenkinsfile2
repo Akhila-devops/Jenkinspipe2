@@ -1,22 +1,25 @@
 pipeline {
 agent any
 }
+
 stages {
     stage ('checkout') {
        steps {
+       node ('new node')
          checkout scm
         }
     }
 
     stage ('creation of the folder') {
        steps {
+       node ('new node')
          sh 'cd /home/ubuntu; sudo mkdir rahul'
        }
     }
   
     stage ('creation of the folder on different server') {
       steps {
-        node ('node demo') {
+        node ('node demo')
         sh 'cd /home/ubuntu; sudo mkdir rohith'
         }
       }
