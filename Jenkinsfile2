@@ -1,7 +1,5 @@
 pipeline {
 agent any
-}
-
 stages {
     stage ('checkout') {
        steps {
@@ -23,4 +21,5 @@ stages {
         sh 'cd /home/ubuntu; sudo mkdir rohith'
         }
     }
+}
 }
