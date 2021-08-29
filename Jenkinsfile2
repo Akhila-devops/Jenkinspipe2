@@ -22,6 +22,5 @@ stages {
         node ('node demo')
         sh 'cd /home/ubuntu; sudo mkdir rohith'
         }
-      }
-   }
+    }
 }
