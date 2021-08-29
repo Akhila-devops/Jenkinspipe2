@@ -3,18 +3,15 @@ agent any
 stages {
     stage ('checkout') {
        steps {
-       node ('new node')
-         checkout scm
+          checkout scm
         }
     }
-
     stage ('creation of the folder') {
        steps {
        node ('new node')
          sh 'cd /home/ubuntu; sudo mkdir rahul'
        }
     }
-  
     stage ('creation of the folder on different server') {
       steps {
         node ('node demo')
