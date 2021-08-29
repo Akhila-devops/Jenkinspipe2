@@ -10,7 +10,7 @@ stages {
     }
     stage ('creation of the folder') {
        steps {
-          sh 'cd /home/ubuntu; sudo mkdir rahul'
+          sh 'cd /home/ubuntu; sudo mkdir rohan'
        }
     }
     stage ('creation of the folder on different server') {
