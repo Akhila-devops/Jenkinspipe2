@@ -15,7 +15,7 @@ stages {
     stage ('creation of the folder on different server') {
       steps {
         node ('node demo')
-        sh 'cd /home/ubuntu; sudo mkdir rohith'
+        sh 'cd /var/www; sudo mkdir rohith'
         }
     }
 }
