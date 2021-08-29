@@ -1,8 +1,7 @@
 pipeline {
 agent any
-node 'new node'
 }
- stages {
+stages {
     stage ('checkout') {
        steps {
          checkout scm
