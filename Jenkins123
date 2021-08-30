@@ -10,13 +10,13 @@ stages {
     }
     stage ('creation of the folder') {
        steps {
-          sh 'cd /home/ubuntu; sudo mkdir rahul'
+          sh 'cd /home/ubuntu; sudo mkdir rahul1'
        }
     }
     stage ('creation of the folder on different server') {
       steps {
-        label ('node demo')
-        sh 'cd /home/ubuntu; sudo mkdir rohith'
+        label ('slave')
+        sh 'cd /home/ubuntu; sudo mkdir rohith1'
         }
     }
 }
