@@ -8,8 +8,8 @@ pipeline {
         }
     }
        stage ('creation of the folder') {
-          steps {
-            sh 'cd /home/ubuntu; sudo mkdir name'
+         steps {
+          sh 'cd /home/ubuntu; sudo mkdir avadutha5'
        }
     }
   }
