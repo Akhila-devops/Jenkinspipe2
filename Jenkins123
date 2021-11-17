@@ -1,15 +1,15 @@
 pipeline {
-  agent any {
-  }
-stages {
-    stage ('checkout') {
-       steps {
-        checkout scm
+    agent any
+    
+    stages {
+       stage ('checkout') {
+          steps {
+            checkout scm
         }
     }
-    stage ('creation of the folder') {
-       steps {
-          sh 'cd /home/ubuntu; sudo mkdir rani'
+       stage ('creation of the folder') {
+          steps {
+            sh 'cd /home/ubuntu; sudo mkdir rani'
        }
     }
   }
