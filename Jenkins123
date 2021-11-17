@@ -9,7 +9,7 @@ pipeline {
     }
        stage ('creation of the folder') {
           steps {
-            sh 'cd /home/ubuntu; mkdir rani'
+            sh 'cd /home/ubuntu; sudo mkdir name'
        }
     }
   }
